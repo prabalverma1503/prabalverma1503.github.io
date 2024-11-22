@@ -3,32 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ThermosPro - Thermal Printing Made Easy</title>
+  <title>ThermosPro - Thermal Printing Simplified</title>
   <style>
+    /* General Styles */
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       color: #333;
-      background-color: #f4f8fc;
+      background-color: #f0f7ff;
     }
+    h1, h2 {
+      color: #0056b3;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    /* Header */
     header {
-      background: linear-gradient(90deg, #007bff, #0056b3);
+      background: linear-gradient(90deg, #007bff, #003d99);
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
-      animation: fadeIn 2s ease-in-out;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
+      padding: 3rem 1rem;
     }
     header p {
       font-size: 1.2rem;
-      margin: 0.5rem 0 0;
     }
+    /* Section */
     section {
-      padding: 3rem 1rem;
-      text-align: center;
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
     }
     .features, .images {
       display: flex;
@@ -37,79 +63,99 @@
       gap: 2rem;
     }
     .feature, .image-container {
-      max-width: 300px;
       background: white;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       overflow: hidden;
-      animation: fadeIn 1.5s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      transition: transform 0.3s ease;
+    }
+    .feature:hover, .image-container:hover {
+      transform: translateY(-5px);
     }
     .feature img, .image-container img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+      border-bottom: 4px solid #007bff;
     }
-    .feature h3 {
-      margin: 0;
+    .feature h3, .feature p {
       padding: 1rem;
+    }
+    .custom-receipt {
+      background: linear-gradient(90deg, #f0f7ff, #d8eaff);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .custom-receipt h2 {
+      color: #003d99;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      font-size: 1rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
       background: #007bff;
       color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
     }
-    .feature p {
-      padding: 1rem;
+    button:hover {
+      background: #0056b3;
     }
     footer {
       text-align: center;
-      background: #0056b3;
+      background: #003d99;
       color: white;
       padding: 1rem;
+      margin-top: 2rem;
     }
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    footer p {
+      margin: 0.5rem 0;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Welcome to ThermosPro</h1>
-  <p>Effortless thermal printing for modern businesses</p>
+  <h1>ThermosPro</h1>
+  <p>Effortless thermal printing for small businesses</p>
 </header>
 
 <section>
-  <h2>Why Choose ThermosPro?</h2>
+  <h2>Why ThermosPro?</h2>
   <div class="features">
     <div class="feature">
-      <img src="https://cdn.pixabay.com/photo/2016/11/23/14/34/printer-1851092_960_720.jpg" alt="Fast Printing">
+      <img src="https://via.placeholder.com/300x200?text=Fast+Printing" alt="Fast Printing">
       <h3>Fast Printing</h3>
-      <p>Experience blazing-fast thermal printing for all your receipts and invoices.</p>
+      <p>Quickly print receipts and invoices with unparalleled speed and accuracy.</p>
     </div>
     <div class="feature">
-      <img src="https://cdn.pixabay.com/photo/2017/01/10/21/15/barcode-1961050_960_720.jpg" alt="Barcode Support">
-      <h3>Barcode Support</h3>
-      <p>Supports multiple barcode formats for seamless inventory management.</p>
+      <img src="https://via.placeholder.com/300x200?text=Cross+Platform" alt="Cross Platform">
+      <h3>Cross Platform</h3>
+      <p>ThermosPro is compatible with Android, iOS, Windows, and Linux systems.</p>
     </div>
     <div class="feature">
-      <img src="https://cdn.pixabay.com/photo/2016/11/29/04/54/laptop-1868566_960_720.jpg" alt="Cross-Platform">
-      <h3>Cross-Platform</h3>
-      <p>Compatible with Android, iOS, Windows, and Linux devices.</p>
+      <img src="https://via.placeholder.com/300x200?text=Customizable" alt="Customizable">
+      <h3>Customizable</h3>
+      <p>Easily configure your receipts to meet your business's specific needs.</p>
     </div>
+  </div>
+</section>
+
+<section>
+  <h2>Custom Receipt Demo</h2>
+  <div class="custom-receipt">
+    <h2>Generate a Custom Receipt</h2>
+    <textarea placeholder="Enter your receipt details here..."></textarea>
+    <button>Print Receipt</button>
   </div>
 </section>
 
@@ -117,19 +163,20 @@
   <h2>Explore ThermosPro</h2>
   <div class="images">
     <div class="image-container">
-      <img src="https://cdn.pixabay.com/photo/2018/02/22/22/39/printer-3170590_960_720.jpg" alt="Receipt Printing">
+      <img src="https://via.placeholder.com/300x200?text=Retail+Business" alt="Retail Business">
     </div>
     <div class="image-container">
-      <img src="https://cdn.pixabay.com/photo/2016/12/26/18/10/code-1935733_960_720.jpg" alt="POS Integration">
+      <img src="https://via.placeholder.com/300x200?text=POS+Integration" alt="POS Integration">
     </div>
     <div class="image-container">
-      <img src="https://cdn.pixabay.com/photo/2020/05/19/07/00/office-5196657_960_720.jpg" alt="Retail Businesses">
+      <img src="https://via.placeholder.com/300x200?text=Barcode+Support" alt="Barcode Support">
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2024 ThermosPro. All rights reserved. | <a href="app-ads.txt">View app-ads.txt</a></p>
+  <p>&copy; 2024 ThermosPro. All rights reserved.</p>
+  <p><a href="app-ads.txt">View app-ads.txt</a></p>
 </footer>
 
 </body>
