@@ -13,7 +13,7 @@
       background-color: #f0f7ff;
     }
     h1, h2 {
-      color: #0056b3;
+      color: white;
     }
     h1 {
       font-size: 3rem;
@@ -23,6 +23,7 @@
       margin-top: 2rem;
       margin-bottom: 1.5rem;
       font-size: 2rem;
+      color: #0056b3;
     }
     p {
       font-size: 1rem;
@@ -56,13 +57,13 @@
       max-width: 1200px;
       margin: auto;
     }
-    .features, .images {
+    .features {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
     }
-    .feature, .image-container {
+    .feature {
       background: white;
       border-radius: 10px;
       overflow: hidden;
@@ -70,45 +71,14 @@
       max-width: 300px;
       transition: transform 0.3s ease;
     }
-    .feature:hover, .image-container:hover {
+    .feature:hover {
       transform: translateY(-5px);
     }
-    .feature img, .image-container img {
+    .feature img {
       border-bottom: 4px solid #007bff;
     }
     .feature h3, .feature p {
       padding: 1rem;
-    }
-    .custom-receipt {
-      background: linear-gradient(90deg, #f0f7ff, #d8eaff);
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .custom-receipt h2 {
-      color: #003d99;
-    }
-    textarea {
-      width: 100%;
-      height: 150px;
-      font-size: 1rem;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      background: #007bff;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    button:hover {
-      background: #0056b3;
     }
     footer {
       text-align: center;
@@ -133,43 +103,45 @@
   <h2>Why ThermosPro?</h2>
   <div class="features">
     <div class="feature">
-      <img src="https://via.placeholder.com/300x200?text=Fast+Printing" alt="Fast Printing">
+      <img src="https://images.pexels.com/photos/7014408/pexels-photo-7014408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fast Printing">
       <h3>Fast Printing</h3>
       <p>Quickly print receipts and invoices with unparalleled speed and accuracy.</p>
     </div>
     <div class="feature">
-      <img src="https://via.placeholder.com/300x200?text=Cross+Platform" alt="Cross Platform">
+      <img src="https://cdn.shopify.com/s/files/1/1696/1045/files/Android-vs-ios_600x600.jpg?v=1706408067" alt="Cross Platform">
       <h3>Cross Platform</h3>
       <p>ThermosPro is compatible with Android, iOS, Windows, and Linux systems.</p>
     </div>
     <div class="feature">
-      <img src="https://via.placeholder.com/300x200?text=Customizable" alt="Customizable">
-      <h3>Customizable</h3>
-      <p>Easily configure your receipts to meet your business's specific needs.</p>
+      <img src="https://ocr.space/Content/Images/receipt-ocr-original.webp" alt="Custom Receipts">
+      <h3>Custom Receipts</h3>
+      <p>Create and print fully customizable receipts tailored to your business needs.</p>
     </div>
-  </div>
-</section>
-
-<section>
-  <h2>Custom Receipt Demo</h2>
-  <div class="custom-receipt">
-    <h2>Generate a Custom Receipt</h2>
-    <textarea placeholder="Enter your receipt details here..."></textarea>
-    <button>Print Receipt</button>
+    <div class="feature">
+      <img src="https://www.filingbazaar.com/images/fb/-barcode%20LICENSE.jpg" alt="Barcode Support">
+      <h3>Barcode Support</h3>
+      <p>Generate barcodes directly from the app for seamless inventory management.</p>
+    </div>
   </div>
 </section>
 
 <section>
   <h2>Explore ThermosPro</h2>
-  <div class="images">
-    <div class="image-container">
-      <img src="https://via.placeholder.com/300x200?text=Retail+Business" alt="Retail Business">
+  <div class="features">
+    <div class="feature">
+      <img src="https://blog.tatanexarc.com/wp-content/uploads/2023/08/Retail-business-Types-how-to-start-process-registration.jpg" alt="Retail Business">
+      <h3>Perfect for Retail</h3>
+      <p>Designed for small retail businesses to streamline thermal printing processes.</p>
     </div>
-    <div class="image-container">
-      <img src="https://via.placeholder.com/300x200?text=POS+Integration" alt="POS Integration">
+    <div class="feature">
+      <img src="https://images-cdn.ubuy.ae/65c473f193647a3b51137c9c-cash-register-for-small-businesses.jpg" alt="POS Integration">
+      <h3>POS Integration</h3>
+      <p>Easily integrate with your existing Point of Sale system.</p>
     </div>
-    <div class="image-container">
-      <img src="https://via.placeholder.com/300x200?text=Barcode+Support" alt="Barcode Support">
+    <div class="feature">
+      <img src="https://images-cdn.ubuy.ae/65c473f193647a3b51137c9c-cash-register-for-small-businesses.jpg" alt="Reliable">
+      <h3>Reliable</h3>
+      <p>Built for reliability and efficiency, ensuring a smooth operation every time.</p>
     </div>
   </div>
 </section>
